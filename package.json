@@ -1,0 +1,70 @@
+{
+  "name": "vitaepariatur",
+  "version": "1.0.0",
+  "description": "JSON Parser",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/index.js.map",
+    "dist/index.d.ts.map",
+    "src/index.ts"
+  ],
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/dist/test/*Tests.js"
+    ],
+    "reporters": [
+      "jest-junit",
+      "default"
+    ],
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 95,
+        "lines": 98,
+        "statements": 98
+      }
+    },
+    "coveragePathIgnorePatterns": [
+      "/dist/test/"
+    ],
+    "coverageReporters": [
+      "cobertura",
+      "text",
+      "html"
+    ]
+  },
+  "jest-junit": {
+    "outputDirectory": ".",
+    "outputName": "test-results.xml"
+  },
+  "keywords": [
+    "json",
+    "praesentium"
+  ],
+  "author": "KamrenHeathcote",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "@types/node": "^10.12.18",
+    "jest": "^26.1.0",
+    "jest-junit": "^11.0.1",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@ts-common/add-position": "^1.1.0",
+    "@ts-common/iterator": "^1.1.0",
+    "@ts-common/json": "^1.1.0",
+    "@ts-common/source-map": "^1.1.0",
+    "@ts-common/string-map": "^1.1.0",
+    "tslib": "^1.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArvidShanahan/vitaepariatur.git"
+  }
+}
